@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Carosel from './Carosel'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import Carousel from './Carousel'
 
 const GetProducts = () => {
   // hooks for array comming from flask api
@@ -41,7 +41,7 @@ const GetProducts = () => {
   return (
     <div className='row mt-4 container-fluid'>
       <Navbar/>
-      <Carosel/>
+      <Carousel/>
         <h3 className='text-center text-muted'>Avilable products</h3>
         <h5 className='text-info'>{loading}</h5>
         <h5 className='text-warning'>{error}</h5>
